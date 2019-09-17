@@ -1,0 +1,44 @@
+/*
+ *
+ *  * Created by Murillo Comino on 17/09/19 17:12
+ *  * Github: github.com/MurilloComino
+ *  * StackOverFlow: pt.stackoverflow.com/users/128573
+ *  * Email: murillo_comino@hotmail.com
+ *  *
+ *  * Copyright (c) 2019 . All rights reserved.
+ *  * Last modified 17/09/19 11:12
+ *
+ */
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:deprecation"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
