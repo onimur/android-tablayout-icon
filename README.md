@@ -1,6 +1,6 @@
 # SmartTabLayoutIcon
 
-This example uses the SmartTabLayout library to create a TabLayout with icons.
+This example uses the [SmartTabLayout](https://github.com/ogaclejapan/SmartTabLayout) library to create a TabLayout with icons.
 
 In answer to [Stack Overflow (Pt-BR)](https://pt.stackoverflow.com/a/360185/128573)
 
@@ -36,7 +36,7 @@ gradlew installDebug
 ![](resources/1.gif)
 
 ## Built With
-
+* [SmartTabLayout](https://github.com/ogaclejapan/SmartTabLayout) - Library
 * [Android Studio 3.5](https://developer.android.com/studio) - The IDE used
 
 ## License
